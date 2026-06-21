@@ -1,0 +1,17 @@
+# Large upstream clone (regenerate: git clone --depth 1 https://github.com/rust-lang/rust)
+rust/
+
+# Ingestion copies and scratch (regenerate via scrape-rust-docs.sh / .codex-build/scrape-std.sh)
+.raw/
+
+# Build logs (kept locally, not part of the repo)
+.codex-build/logs/
+
+# Obsidian + desktop local state
+.vault-meta/
+.obsidian/workspace*.json
+.directory
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

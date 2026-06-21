@@ -1,0 +1,11 @@
+{
+  "schema": "brainstein.adapter-manifest.v1",
+  "generic_only": true,
+  "note": "This is a knowledge vault, not a data-processing product; no importers/synthesizers are required. See references/adapter-plan.md and wiki/Coverage Backlog.md (product-packaging section) if ever distributed as a Brainstein product.",
+  "input_schemas": [],
+  "importers": [],
+  "synthesis_modules": [],
+  "report_renderers": [],
+  "fixtures": [],
+  "tests": []
+}

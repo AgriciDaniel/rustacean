@@ -1,0 +1,128 @@
+{
+  "schema": "brainstein.source-ledger.v1",
+  "domain": "Rust language and ecosystem",
+  "generated_at": "2026-06-21",
+  "refresh_cadence": "every 6-week Rust release; monthly for ecosystem/security",
+  "sources": [
+    {
+      "id": "the-book",
+      "title": "the-book",
+      "url": "https://doc.rust-lang.org/book/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/the-book.md"
+    },
+    {
+      "id": "the-reference",
+      "title": "the-reference",
+      "url": "https://doc.rust-lang.org/reference/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/the-reference.md"
+    },
+    {
+      "id": "rust-by-example",
+      "title": "rust-by-example",
+      "url": "https://doc.rust-lang.org/rust-by-example/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/rust-by-example.md"
+    },
+    {
+      "id": "rustonomicon",
+      "title": "rustonomicon",
+      "url": "https://doc.rust-lang.org/nomicon/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/rustonomicon.md"
+    },
+    {
+      "id": "edition-guide",
+      "title": "edition-guide",
+      "url": "https://doc.rust-lang.org/edition-guide/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/edition-guide.md"
+    },
+    {
+      "id": "cargo-book",
+      "title": "cargo-book",
+      "url": "https://doc.rust-lang.org/cargo/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/cargo-book.md"
+    },
+    {
+      "id": "rustdoc-book",
+      "title": "rustdoc-book",
+      "url": "https://doc.rust-lang.org/rustdoc/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/rustdoc-book.md"
+    },
+    {
+      "id": "rustc-book",
+      "title": "rustc-book",
+      "url": "https://doc.rust-lang.org/rustc/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/rustc-book.md"
+    },
+    {
+      "id": "command-line-book",
+      "title": "command-line-book",
+      "url": "https://rust-cli.github.io/book/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/command-line-book.md"
+    },
+    {
+      "id": "embedded-book",
+      "title": "embedded-book",
+      "url": "https://doc.rust-lang.org/embedded-book/",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": ".raw/books/embedded-book.md"
+    },
+    {
+      "id": "rust-research",
+      "title": "Verified deep-research reports",
+      "url": "internal",
+      "source_type": "primary",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-07-21",
+      "confidence": "high",
+      "local_path": "research/"
+    },
+    {
+      "id": "rust-lang-rust",
+      "title": "rust-lang/rust source tree",
+      "url": "https://github.com/rust-lang/rust",
+      "source_type": "official",
+      "retrieved": "2026-06-21",
+      "refresh_due": "2026-08-02",
+      "confidence": "high",
+      "local_path": "rust/"
+    }
+  ]
+}

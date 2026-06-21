@@ -1,0 +1,424 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "wiki/Rust Brain Home.md",
+      "x": -260,
+      "y": -80,
+      "width": 420,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "moc0",
+      "type": "file",
+      "file": "wiki/mocs/Advanced Types & Features.md",
+      "x": -1080,
+      "y": 260,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc1",
+      "type": "file",
+      "file": "wiki/mocs/Anti-patterns & Footguns.md",
+      "x": -720,
+      "y": 260,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc2",
+      "type": "file",
+      "file": "wiki/mocs/Async Rust.md",
+      "x": -360,
+      "y": 260,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc3",
+      "type": "file",
+      "file": "wiki/mocs/Basic Concepts & Syntax.md",
+      "x": 0,
+      "y": 260,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc4",
+      "type": "file",
+      "file": "wiki/mocs/Cargo & Dependencies.md",
+      "x": 360,
+      "y": 260,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc5",
+      "type": "file",
+      "file": "wiki/mocs/Closures & Iterators.md",
+      "x": 720,
+      "y": 260,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc6",
+      "type": "file",
+      "file": "wiki/mocs/Collections & Strings.md",
+      "x": -1080,
+      "y": 440,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc7",
+      "type": "file",
+      "file": "wiki/mocs/Concurrency.md",
+      "x": -720,
+      "y": 440,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc8",
+      "type": "file",
+      "file": "wiki/mocs/Editions & Compiler.md",
+      "x": -360,
+      "y": 440,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc9",
+      "type": "file",
+      "file": "wiki/mocs/Embedded Rust.md",
+      "x": 0,
+      "y": 440,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc10",
+      "type": "file",
+      "file": "wiki/mocs/Enums & Pattern Matching.md",
+      "x": 360,
+      "y": 440,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc11",
+      "type": "file",
+      "file": "wiki/mocs/Error Handling.md",
+      "x": 720,
+      "y": 440,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc12",
+      "type": "file",
+      "file": "wiki/mocs/Generics, Traits & Lifetimes.md",
+      "x": -1080,
+      "y": 620,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc13",
+      "type": "file",
+      "file": "wiki/mocs/Idioms & API Design.md",
+      "x": -720,
+      "y": 620,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc14",
+      "type": "file",
+      "file": "wiki/mocs/Macros.md",
+      "x": -360,
+      "y": 620,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc15",
+      "type": "file",
+      "file": "wiki/mocs/Modules & Project Structure.md",
+      "x": 0,
+      "y": 620,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc16",
+      "type": "file",
+      "file": "wiki/mocs/OOP & Trait Objects.md",
+      "x": 360,
+      "y": 620,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc17",
+      "type": "file",
+      "file": "wiki/mocs/Ownership & Memory.md",
+      "x": 720,
+      "y": 620,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc18",
+      "type": "file",
+      "file": "wiki/mocs/Performance & Optimization.md",
+      "x": -1080,
+      "y": 800,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc19",
+      "type": "file",
+      "file": "wiki/mocs/Smart Pointers & Interior Mutability.md",
+      "x": -720,
+      "y": 800,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc20",
+      "type": "file",
+      "file": "wiki/mocs/Structs.md",
+      "x": -360,
+      "y": 800,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc21",
+      "type": "file",
+      "file": "wiki/mocs/Testing & Documentation.md",
+      "x": 0,
+      "y": 800,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc22",
+      "type": "file",
+      "file": "wiki/mocs/Tooling & Getting Started.md",
+      "x": 360,
+      "y": 800,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "moc23",
+      "type": "file",
+      "file": "wiki/mocs/Unsafe Rust & FFI.md",
+      "x": 720,
+      "y": 800,
+      "width": 320,
+      "height": 120,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc0",
+      "toSide": "top"
+    },
+    {
+      "id": "e1",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc1",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc2",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc3",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc4",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc5",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc6",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc7",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc8",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc9",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc10",
+      "toSide": "top"
+    },
+    {
+      "id": "e11",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc11",
+      "toSide": "top"
+    },
+    {
+      "id": "e12",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc12",
+      "toSide": "top"
+    },
+    {
+      "id": "e13",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc13",
+      "toSide": "top"
+    },
+    {
+      "id": "e14",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc14",
+      "toSide": "top"
+    },
+    {
+      "id": "e15",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc15",
+      "toSide": "top"
+    },
+    {
+      "id": "e16",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc16",
+      "toSide": "top"
+    },
+    {
+      "id": "e17",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc17",
+      "toSide": "top"
+    },
+    {
+      "id": "e18",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc18",
+      "toSide": "top"
+    },
+    {
+      "id": "e19",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc19",
+      "toSide": "top"
+    },
+    {
+      "id": "e20",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc20",
+      "toSide": "top"
+    },
+    {
+      "id": "e21",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc21",
+      "toSide": "top"
+    },
+    {
+      "id": "e22",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc22",
+      "toSide": "top"
+    },
+    {
+      "id": "e23",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "moc23",
+      "toSide": "top"
+    }
+  ]
+}

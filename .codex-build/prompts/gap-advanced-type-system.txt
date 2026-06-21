@@ -1,0 +1,28 @@
+You are the Rust Secretary FILLING COVERAGE GAPS in the Rust brain. Working dir = vault root.
+Read AGENTS.md, wiki/meta/CONVENTIONS.md, and wiki/concepts/Ownership.md (the standard) first.
+
+YOUR DOMAIN: "Advanced Type System"  (an EXISTING domain; its MOC is wiki/mocs/ — find it by `domain:` field).
+
+Create these MISSING atomic notes (one idea per note, >=80 lines each), correct & current
+(edition 2024 / stable 1.85+). These were flagged as gaps / dead-link targets; some other notes already
+[[link]] to these exact titles, so use these titles EXACTLY so the links resolve:
+  - Drop Check
+  - Type layout
+  - Type Layout and repr
+
+Put concept notes in wiki/concepts/, pattern/playbook notes in wiki/patterns/, antipattern notes in
+wiki/antipatterns/ (choose by nature). Then ADD each new note to this domain's MOC (wiki/mocs/<this domain>.md)
+under the right section.
+
+SOURCES (read what's relevant): .raw/books/rustonomicon.md (dropck, layout), .raw/books/the-reference.md (type layout / repr)
+
+RULES (same contract as the rest of the brain):
+- Full flat-YAML frontmatter (type,title,status,created:2026-06-21,updated:2026-06-21,tags incl rust,
+  domain:"Advanced Type System",difficulty,related>=3,sources,source_urls real,rust_version:"edition 2024 / 1.85+").
+- Answer-first first line; CONVENTIONS skeleton; a MINIMAL COMPILABLE ```rust example; ✅ Best practice;
+  ⚠️ Pitfalls; "See also" with >=8 [[wikilinks]]; "Sources".
+- SKIP-IF-EXISTS: never overwrite an existing note; if a title already exists, just [[link]] to it.
+- Title must equal filename. Correct & current; never invent APIs; for crates cite docs.rs + "verify latest version".
+- Do not edit other domains' notes. Do not touch .raw/, sources/, research/, rust/, specs/, references/.
+
+FINISH: print the file paths you created.

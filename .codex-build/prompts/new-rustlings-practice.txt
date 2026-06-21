@@ -1,0 +1,29 @@
+You are adding a PRACTICE layer to an Obsidian "Rust brain". Working dir = vault root.
+
+STEP 1 — read: wiki/meta/CONVENTIONS.md and wiki/concepts/Ownership.md (format).
+
+YOUR DOMAIN: "Practice (Rustlings)"
+
+SOURCE: .raw/rustlings/exercises/  — the official Rustlings exercise sets (one folder per topic, e.g.
+00_intro, 01_variables, 02_functions, 03_if, 04_primitive_types, 05_vecs, 06_move_semantics,
+07_structs, 08_enums, 09_strings, 10_modules, 11_hashmaps, 12_options, 13_error_handling,
+14_generics, 15_traits, 16_lifetimes, 17_tests, 18_iterators, 19_smart_pointers, 20_threads,
+21_macros, 22_clippy, 23_conversions, plus quizzes). List the folders to confirm exact names.
+
+TASK — create a practice layer that maps Rustlings to this brain's concept notes:
+- ONE map-of-content: wiki/mocs/Practice (Rustlings).md (type: moc) — a table of every exercise group
+  with: the skills it drills, and [[links]] to the matching concept/pattern notes already in this brain
+  (e.g. 06_move_semantics -> [[Move Semantics]], [[Ownership]], [[Borrowing]]).
+- ONE practice note per exercise GROUP in wiki/concepts/ titled "Practice: <Topic>" (e.g.
+  "Practice: Move Semantics", "Practice: Error Handling"), each with: what the group teaches, the key
+  idea recap, a representative worked example in ```rust, common mistakes learners hit (⚠️), and a
+  "See also" linking the real concept notes (>=6 [[wikilinks]]). ~18-24 practice notes total.
+
+RULES:
+- Full frontmatter per CONVENTIONS (type: concept; domain: "Practice (Rustlings)"; tags include rust, practice;
+  created/updated 2026-06-21; difficulty; source_urls: https://github.com/rust-lang/rustlings; rust_version "edition 2024 / 1.85+").
+- Link to EXISTING concept notes by their real titles (grep wiki/ to find exact names; dangling links are ok if a target is missing).
+- Do NOT modify existing notes or other domains. Do not touch .raw/, sources/, research/, rust/, specs/.
+- Correct & current. Practice notes complement (not duplicate) the concept notes.
+
+FINISH: print the list of file paths you created.

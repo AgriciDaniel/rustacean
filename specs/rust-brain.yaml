@@ -1,0 +1,58 @@
+spec_version: 2
+slug: "rust-brain"
+title: "Rust Brain"
+domain: "Rust language, standard library, tooling, and ecosystem best practices"
+buyer: "Rust developers who want to write correct, idiomatic, current (edition 2024) Rust with confidence"
+owner: "AgriciDaniel"
+license_name: "Apache-2.0"
+research_refresh_cadence: "every 6-week Rust release for language/std changes; monthly for ecosystem/crates and security advisories"
+workflows:
+  - "Source intake from official Rust docs (Book, Reference, RBE, Nomicon, Cargo, rustc/rustdoc, edition guide, embedded, CLI)"
+  - "Atomic synthesis into concept / pattern / antipattern notes"
+  - "Best-practices and anti-pattern research synthesis"
+  - "Cross-linking and MOC (map-of-content) construction"
+  - "Lint, audit, and refresh against current stable Rust"
+raw_sources:
+  - "The Rust Programming Language (the Book)"
+  - "The Rust Reference"
+  - "Rust by Example"
+  - "The Rustonomicon (unsafe Rust)"
+  - "The Cargo Book, rustc Book, rustdoc Book, Edition Guide, Embedded Book, Command-Line Book"
+  - "10 verified deep-research reports on Rust best practices and pitfalls"
+  - "rust-lang/rust source tree (library/std, core, alloc)"
+enrichment_sources:
+  - "Official rust-lang.org documentation (doc.rust-lang.org)"
+  - "Rust RFC book (rust-lang.github.io/rfcs) and the Rust blog (blog.rust-lang.org)"
+  - "Rust API Guidelines (rust-lang.github.io/api-guidelines)"
+  - "Tokio docs (tokio.rs), this-week-in-rust.org, rust-unofficial design patterns"
+deliverables:
+  - "Cross-linked concept notes for the Rust language and stdlib"
+  - "Idiom / best-practice pattern notes"
+  - "Anti-pattern / footgun notes with the correct alternative"
+  - "Domain MOCs (ownership, types & traits, error handling, async, concurrency, unsafe, tooling)"
+  - "A 'Rust mastery' synthesis linking good practices to mistakes-to-avoid"
+refusal_rules:
+  - "No language/stdlib behavior claim without an official doc, RFC, or source citation"
+  - "No unsafe-code recommendation without an explicit soundness rationale and citation"
+  - "No idiom presented as current if deprecated in edition 2024 / current stable"
+  - "Read-only: never mutate external repos, registries, or systems"
+safety_risks:
+  - "Stale version/edition claims (Rust ships every 6 weeks; edition 2024 is current)"
+  - "Outdated unsafe patterns from pre-2024 docs (e.g. references to static mut)"
+  - "Pre-1.0 crate API-stability assumptions"
+  - "Outdated performance benchmarks or compiler behavior"
+playbook_steps:
+  - "Source intake and provenance capture"
+  - "Atomic synthesis and cross-linking"
+  - "Best-practices and anti-pattern synthesis"
+  - "Lint, audit, and refresh"
+audit_focus:
+  - "Stale Rust version/edition claims"
+  - "Outdated unsafe patterns"
+  - "Pre-1.0 crate stability assumptions"
+  - "Outdated performance/compiler claims"
+next_action_signals:
+  - "Cross-linked concept notes"
+  - "Best-practice pattern notes"
+  - "Anti-pattern notes"
+  - "Domain MOCs"

@@ -1,0 +1,33 @@
+You are DEEPENING an existing Obsidian "Rust brain". Working directory is the vault root. Quality, correctness, and currency matter more than speed.
+
+STEP 1 — read and obey:
+- wiki/meta/CONVENTIONS.md  (the authoring contract)
+- wiki/concepts/Ownership.md  (gold-standard depth/format to match or exceed)
+
+YOUR DOMAIN: "{domain}"
+
+STEP 2 — find your notes: every file under wiki/concepts/, wiki/patterns/, wiki/antipatterns/ whose
+frontmatter `domain:` is EXACTLY "{domain}". (Use grep.) These are the ONLY files you may edit.
+
+STEP 3 — for EACH of those notes, DEEPEN it in place (edit, do not recreate, do not rename):
+- Grow it to >=80 lines of real substance (currently many are ~70). Add genuine value, not filler:
+  * a second, more realistic worked example OR edge cases the first example doesn't cover
+  * a "## Common errors" section showing the typical compiler message (e.g. E0382) and the fix, where relevant
+  * deepen "How it works" with the underlying mechanism / what the compiler or runtime actually does
+  * expand "Best practice" (✅) and "Pitfalls" (⚠️) with more concrete, specific items
+  * widen "See also" to >=8 [[wikilinks]] (link related concepts, patterns, antipatterns, the MOC)
+- Keep it CORRECT and CURRENT: edition 2024 / stable 1.85+. Fix anything outdated you notice.
+- Preserve frontmatter; set `updated: 2026-06-21`; bump `status:` to `mature` if it is now comprehensive.
+- Keep the answer-first first line and all existing [[links]] and ```rust fences valid.
+
+You MAY also CREATE up to 5 NEW atomic notes in this domain if an important concept/pattern/antipattern
+is clearly missing (same frontmatter contract; add them to the domain's MOC in wiki/mocs/{domain}.md).
+Do NOT create or edit notes for other domains (you may [[link]] to them).
+
+SOURCES for accuracy (read what's relevant): .raw/books/*.md (your chapters), .raw/research/*.md,
+.raw/std/*.md (standard-library API pages, if your domain touches std types/traits).
+
+HARD RULES: edit only files whose `domain:` is "{domain}" (+ this domain's MOC). Never break YAML frontmatter.
+Never present a deprecated idiom as current. Do not touch .raw/, sources/, research/, rust/, specs/, references/.
+
+FINISH: print the list of files you edited and any you created (one path per line).
