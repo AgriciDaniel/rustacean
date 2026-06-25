@@ -8,7 +8,10 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>{title}</a>
+      <a href={baseDir}>
+        <img class="page-title-logo" src={`${baseDir}/static/logo.png`} alt="Ferris, the Rust mascot" />
+        <span>{title}</span>
+      </a>
     </h2>
   )
 }
@@ -18,6 +21,16 @@ PageTitle.css = `
   font-size: 1.75rem;
   margin: 0;
   font-family: var(--titleFont);
+}
+.page-title a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.page-title-logo {
+  width: 2.6rem;
+  height: auto;
+  flex-shrink: 0;
 }
 `
 
