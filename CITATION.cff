@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use Rustacean, please cite it as below."
+title: "Rustacean: A Rust Knowledge Brain"
+abstract: >-
+  A cross-linked Obsidian knowledge brain for writing correct, idiomatic,
+  current Rust (edition 2024 / stable 1.85+): hundreds of atomic, interlinked
+  notes (concepts, patterns, and anti-patterns) plus a grounded Rust agent.
+type: dataset
+authors:
+  - family-names: Agrici
+    given-names: Daniel
+    alias: AgriciDaniel
+version: 1.0.0
+date-released: "2026-06-25"
+license: MIT
+repository-code: "https://github.com/AgriciDaniel/rustacean"
+url: "https://github.com/AgriciDaniel/rustacean"
+keywords:
+  - rust
+  - rust-lang
+  - knowledge-base
+  - obsidian
+  - second-brain
+  - zettelkasten
+  - edition-2024
