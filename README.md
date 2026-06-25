@@ -12,6 +12,10 @@
 
 > Not a tutorial and not a doc mirror. It is the opinionated layer on top of the docs: for every topic you get the idiomatic way to do it, the mistake to avoid, a compilable example, and links to everything related.
 
+## Watch the video
+
+[![Watch the Rustacean walkthrough on YouTube](https://img.youtube.com/vi/2zZg_CN3waw/maxresdefault.jpg)](https://www.youtube.com/watch?v=2zZg_CN3waw)
+
 ## Why it exists
 
 - **Code with trust.** Every atomic note opens with a one-line answer, then a minimal compilable `rust` example, a "best practice" list, a "pitfalls" list, and dense `[[links]]`. You act on the note without leaving it.
