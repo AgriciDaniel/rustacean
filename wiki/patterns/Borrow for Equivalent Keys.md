@@ -58,7 +58,7 @@ fn main() {
     scores.insert(Name(String::from("Ferris")), 10);
 
     assert_eq!(scores.get("Ferris"), Some(&10));
-    assert_eq!(scores.get("Crab")), None);
+    assert_eq!(scores.get("Crab"), None);
 }
 ```
 

@@ -43,7 +43,7 @@ Use `transpose` when the nesting mixes `Option` and `Result`.
 
 ## Example
 ```rust
-fn grid_cell(grid: &[Vec<&str>], row: usize, col: usize) -> Option<&str> {
+fn grid_cell<'a>(grid: &[Vec<&'a str>], row: usize, col: usize) -> Option<&'a str> {
     grid.get(row)
         .and_then(|line| line.get(col))
         .copied()

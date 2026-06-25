@@ -64,7 +64,7 @@ use std::time::Duration;
 
 async fn apply_twice<F>(mut f: F) -> Vec<String>
 where
-    F: async FnMut(&str) -> String,
+    F: AsyncFnMut(&str) -> String,
 {
     let first = f("alpha").await;
     tokio::time::sleep(Duration::from_millis(1)).await;
