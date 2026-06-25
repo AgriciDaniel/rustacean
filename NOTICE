@@ -1,0 +1,46 @@
+Rustacean
+Copyright (c) 2026 Agrici Daniel
+
+Rustacean's original work -- the synthesized notes in wiki/, the deep-research
+reports in research/, the scripts, specs, and structure -- is licensed under the
+MIT License (see LICENSE).
+
+This repository also redistributes third-party documentation. Each item below is
+the work of the Rust project and its contributors and is included under its
+upstream license. Where a project additionally offers its prose under a Creative
+Commons license, those terms also apply. See each linked repository's LICENSE for
+the authoritative text.
+
+Redistributed in sources/ (Markdown captures of the official books, mdBook
+navigation chrome stripped):
+
+  The Rust Programming Language        sources/the-book.md
+    https://github.com/rust-lang/book                       MIT OR Apache-2.0
+  The Rust Reference                   sources/the-reference.md
+    https://github.com/rust-lang/reference                  MIT OR Apache-2.0
+  Rust by Example                      sources/rust-by-example.md
+    https://github.com/rust-lang/rust-by-example            MIT OR Apache-2.0
+  The Rustonomicon                     sources/rustonomicon.md
+    https://github.com/rust-lang/nomicon                    MIT OR Apache-2.0
+  The Cargo Book                       sources/cargo-book.md
+    https://github.com/rust-lang/cargo                      MIT OR Apache-2.0
+  The rustc Book                       sources/rustc-book.md
+    https://github.com/rust-lang/rust (src/doc/rustc)       MIT OR Apache-2.0
+  The rustdoc Book                     sources/rustdoc-book.md
+    https://github.com/rust-lang/rust (src/doc/rustdoc)     MIT OR Apache-2.0
+  The Edition Guide                    sources/edition-guide.md
+    https://github.com/rust-lang/edition-guide              MIT OR Apache-2.0
+  The Embedded Rust Book               sources/embedded-book.md
+    https://github.com/rust-embedded/book                   MIT OR Apache-2.0
+  Command Line Applications in Rust    sources/command-line-book.md
+    https://github.com/rust-cli/book                        MIT OR Apache-2.0
+
+Referenced but NOT redistributed in this repository (excluded via .gitignore;
+regenerate locally per the README):
+
+  rust-lang/rust source tree   rust/   shallow clone, MIT OR Apache-2.0
+  Standard-library API pages   .raw/   scraped from https://doc.rust-lang.org/std/
+
+Trademarks: "Rust" and "Cargo" and their logos are trademarks of the Rust
+Foundation. Rustacean is an independent project and is not affiliated with, nor
+endorsed by, the Rust Foundation or the Rust project.

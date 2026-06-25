@@ -109,7 +109,7 @@ Then ask the Secretary to reconcile changed notes. The backlog of upcoming work 
 
 ## Regenerating the corpus
 
-To keep the repository lean, the large upstream and ingestion folders are not committed. Regenerate them locally:
+To keep the repository lean, the upstream source tree (`rust/`) and the raw ingestion copies (`.raw/`) are not committed. Regenerate them locally:
 
 ```bash
 # Standard-library source, std, core, alloc (about 450 MB, shallow)
@@ -150,7 +150,7 @@ Contributions are welcome: fix an incorrect or stale note, add a missing one fro
 
 ## Attribution
 
-This brain is built from open Rust documentation. The Rust Programming Language, the Reference, Rust by Example, the Rustonomicon, the Cargo, rustc, and rustdoc books, the Edition Guide, the Embedded Book, and the standard-library docs are works of the Rust project and its contributors, used under their MIT / Apache-2.0 (and CC-BY) terms. Rustacean's original work (the synthesized notes, research reports, scripts, and structure) is MIT licensed. Rust and Cargo are trademarks of the Rust Foundation.
+This brain is built from open Rust documentation. The Rust Programming Language, the Reference, Rust by Example, the Rustonomicon, the Cargo, rustc, and rustdoc books, the Edition Guide, the Embedded Book, and the standard-library docs are works of the Rust project and its contributors, used under their MIT / Apache-2.0 (and CC-BY) terms. Rustacean's original work (the synthesized notes, research reports, scripts, and structure) is MIT licensed. The full text of those books is redistributed in `sources/` under their upstream licenses; see [NOTICE](NOTICE) for the per-source breakdown. Rust and Cargo are trademarks of the Rust Foundation.
 
 ## License
 
