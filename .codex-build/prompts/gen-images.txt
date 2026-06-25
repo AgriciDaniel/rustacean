@@ -1,0 +1,43 @@
+You are generating Rust-style brand images for the Rustacean README. Working dir = vault root
+($HOME/Desktop/Rustacean). Write and RUN a Python 3 script to do this; do not ask, just do it.
+
+IMAGE ENGINE (verified working): Google Gemini "nano-banana".
+- Load the key: read GEMINI_API_KEY from $HOME/.env (a line `GEMINI_API_KEY=...`).
+- Endpoint (POST, JSON):
+  https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=GEMINI_API_KEY
+- Request body shape:
+  {"contents":[{"parts":[ {"text":"<prompt>"}, {"inlineData":{"mimeType":"image/webp","data":"<base64 of the reference image>"}} ]}]}
+- Response: candidates[0].content.parts[] ; the image part is parts[i]["inlineData"]["data"] (base64 PNG). Decode and save.
+- Use the STYLE REFERENCE image at $HOME/style-reference.webp (a friendly flat-vector orange
+  Ferris crab holding the Rust cog logo). Base64-encode it and include it as the inlineData part in EVERY request so
+  the output matches that exact mascot style (flat vector, bright Rust orange #F74C00 / #CE422B, clean, friendly).
+
+OUTPUT: save into $HOME/Desktop/Rustacean/assets/ . Save each as PNG first, then convert to .webp
+(try Pillow: `from PIL import Image; Image.open(png).save(webp,"WEBP",quality=90)`; if Pillow is missing, try the
+`cwebp` CLI; if neither exists, keep the .png and report that). Keep both is fine. Name files exactly as listed.
+
+GENERATE THESE IMAGES (one request each; reuse the reference image part each time):
+
+1) assets/cover.png  ->  assets/cover.webp
+   Prompt: "Wide banner image, dark charcoal background (#0d1117). On the left, a friendly orange Ferris crab (the Rust
+   mascot) in the SAME clean flat-vector style as the attached reference, holding the black Rust cog-and-R logo. On the
+   right, a softly glowing knowledge graph: many small nodes connected by thin lines, in Rust orange and warm sand
+   (#DEA584). Modern, minimal, high contrast, faint terminal scanline texture. No text, no words, no letters."
+
+2) assets/ferris-brain.png  ->  assets/ferris-brain.webp
+   Prompt: "A friendly orange Ferris crab (same flat-vector style as the attached reference) sitting below a glowing
+   network of interconnected nodes shaped like a brain, symbolizing a knowledge brain. Clean white background, crisp
+   vector, Rust orange and sand accents. No text."
+
+3) assets/knowledge-graph.png  ->  assets/knowledge-graph.webp
+   Prompt: "A dense, beautiful knowledge-graph illustration: hundreds of small glowing dots connected by thin lines,
+   grouped into a few clusters, in Rust orange, warm sand, and a hint of teal, on a near-black background. Looks like an
+   Obsidian graph view, alive and interconnected. Flat, modern, no text."
+
+4) assets/ferris-badge.png  ->  assets/ferris-badge.webp
+   Prompt: "A clean circular badge / sticker of the friendly orange Ferris crab in the exact flat-vector style of the
+   attached reference, centered, on a transparent or white background, with a thin Rust-orange ring. Crisp, simple,
+   logo-like. No text."
+
+ROBUSTNESS: set a 120s timeout per request; if a request fails, print the error and continue to the next image. After
+all four, print a summary: for each, OK/FAIL and the saved file path(s) and byte size.

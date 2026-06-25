@@ -1,6 +1,4 @@
-<!-- Cover image goes here once generated. Uncomment after adding assets/cover.png
-![Rustacean cover: a dark terminal panel titled "Rust Brain" with a ferris crab and a glowing graph of linked notes](assets/cover.png)
--->
+![Rustacean cover: a hermit-crab Ferris in a beanie beside a glowing knowledge-graph brain and a Rust code panel, under the title RUSTACEAN](assets/cover.jpg)
 
 # Rustacean: A Rust Knowledge Brain
 
