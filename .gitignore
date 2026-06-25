@@ -24,3 +24,6 @@ site/.quartz-cache/
 # Python cache
 __pycache__/
 *.pyc
+
+# Example compile-gate build artifacts
+scripts/examples-check/target/

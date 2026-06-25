@@ -1,0 +1,63 @@
+# Known-non-compiling `rust` examples (intentional error-demos,
+# project-structure snippets, proc-macro/no_std/uncommon-crate).
+# Regenerate: WRITE_ALLOW=1 scripts/run-rust-gate.sh
+# 939/997 blocks compile; 58 listed below.
+
+antipatterns/Expecting Per-Field Mutability in Structs.md#2    # E0594: error[E0594]: cannot assign to `user.email`, as `user` is not declared as mutable
+antipatterns/Glob Imports in Public Code.md#2    # E0432: error[E0432]: unresolved import `network`
+antipatterns/Partially Moved Structs with Update Syntax.md#2    # E0382: error[E0382]: borrow of partially moved value: `user1`
+antipatterns/Shared State Between Parallel Tests.md#1    # ?: error: environment variable `CARGO_PKG_NAME` not defined at compile time
+antipatterns/Storing References in Structs Without Lifetimes.md#2    # E0106: error[E0106]: missing lifetime specifier
+antipatterns/Storing References in Structs Without Lifetimes.md#3    # E0515: error[E0515]: cannot return value referencing local variable `username`
+antipatterns/Treating mod as include.md#2    # E0428: error: cannot declare a file module inside a block unless it has a path attribute
+antipatterns/Treating mod as include.md#3    # E0428: error: cannot declare a file module inside a block unless it has a path attribute
+claude-code-rust.md#0    # E0463: error[E0463]: can't find crate for `error_chain`
+concepts/Anatomy of a Cargo Project.md#2    # E0433: error[E0433]: cannot find module or crate `wordcount` in this scope
+concepts/Associated Functions.md#2    # E0599: error[E0599]: no method named `square` found for struct `Rectangle` in the current scope
+concepts/Build-Time Code Execution.md#1    # E0425: error: environment variable `OUT_DIR` not defined at compile time
+concepts/Closure Type Inference.md#1    # ?: error: lifetime may not live long enough
+concepts/Closure Type Inference.md#2    # E0282: error[E0282]: type annotations needed
+concepts/Crate Roots.md#2    # E0433: error[E0433]: cannot find module or crate `text_tool` in this scope
+concepts/Integration Tests.md#1    # E0432: error: cannot declare a file module inside a block unless it has a path attribute
+concepts/Macro Diagnostics.md#1    # E0432,E0433: error: the `#[proc_macro_derive]` attribute is only usable with crates of the `proc-macro` crate type
+concepts/Methods.md#2    # E0382: error[E0382]: borrow of moved value: `token`
+concepts/Module Paths.md#2    # E0603: error[E0603]: module `internal` is private
+concepts/Modules.md#2    # E0603: error[E0603]: function `hidden` is private
+concepts/Named Field Structs.md#2    # E0063: error[E0063]: missing field `active` in initializer of `User`
+concepts/Packages and Crates.md#1    # E0432: error[E0432]: unresolved import `weather_cli`
+concepts/Packages and Crates.md#2    # ?: error: cannot declare a file module inside a block unless it has a path attribute
+concepts/Panic Handlers.md#0    # E0152: error[E0152]: found duplicate lang item `panic_impl`
+concepts/Procedural Macros.md#1    # E0432: error: the `#[proc_macro]` attribute is only usable with crates of the `proc-macro` crate type
+concepts/Returning Closures.md#3    # E0308: error[E0308]: `if` and `else` have incompatible types
+concepts/Splitting Modules into Files.md#1    # ?: error: cannot declare a file module inside a block unless it has a path attribute
+concepts/Splitting Modules into Files.md#2    # ?: error: cannot declare a file module inside a block unless it has a path attribute
+concepts/Splitting Modules into Files.md#4    # ?: error: cannot declare a file module inside a block unless it has a path attribute
+concepts/The Never Type.md#3    # E0308: error[E0308]: mismatched types
+concepts/The use Keyword.md#2    # E0432,E0433: error[E0432]: unresolved import `crate::service`
+concepts/Tuple Structs.md#2    # E0308: error[E0308]: mismatched types
+concepts/Unit-Like Structs.md#2    # E0618: error[E0618]: expected function, found struct `Marker`
+concepts/Visibility and Privacy.md#2    # E0451: error[E0451]: field `name` of struct `User` is private
+concepts/syn and quote.md#0    # E0277: error[E0277]: the trait bound `i32: IdentFragment` is not satisfied
+concepts/syn and quote.md#1    # E0432: error: the `#[proc_macro_derive]` attribute is only usable with crates of the `proc-macro` crate type
+concepts/wasm-bindgen Basics.md#0    # E0433: error[E0433]: cannot find module or crate `wasm_bindgen` in this scope
+patterns/Axum Web Service Playbook.md#0    # E0432,E0433: error[E0433]: cannot find module or crate `axum` in this scope
+patterns/Benchmarking with Criterion.md#0    # E0432: error[E0432]: unresolved import `criterion`
+patterns/Benchmarking with Criterion.md#1    # E0432: error[E0432]: unresolved import `criterion`
+patterns/Boxed Closure Returns.md#2    # E0308: error[E0308]: `if` and `else` have incompatible types
+patterns/Command-Line Parsing.md#0    # ?: error: cannot derive `version` from Cargo.toml
+patterns/Command-Line Parsing.md#1    # ?: error: expected one of `!` or `[`, found `#`
+patterns/Configuration Loading.md#0    # E0432,E0433: error[E0432]: unresolved import `config`
+patterns/Configuration Loading.md#1    # E0432,E0433: error[E0433]: cannot find module or crate `figment` in this scope
+patterns/Deriving Traits on Structs.md#2    # E0277: error[E0277]: `(dyn Fn() + 'static)` doesn't implement `Debug`
+patterns/Field Init Shorthand.md#2    # E0560: error[E0560]: struct `User` has no field named `email_address`
+patterns/Library and Binary Package Layout.md#2    # E0432: error[E0432]: unresolved import `hello_tool`
+patterns/Library and Binary Package Layout.md#3    # ?: error: cannot declare a file module inside a block unless it has a path attribute
+patterns/Re-exporting with pub use.md#2    # E0603: error[E0603]: struct `Client` is private
+patterns/Reqwest HTTP Client Playbook.md#0    # E0433: error[E0433]: cannot find module or crate `reqwest` in this scope
+patterns/Static Dispatch with Generics.md#1    # E0405: error[E0405]: cannot find trait `Score` in this scope
+patterns/Struct Update Syntax.md#2    # E0382: error[E0382]: borrow of partially moved value: `user1`
+patterns/Test Organization.md#1    # E0432: error[E0432]: unresolved import `my_crate`
+patterns/Testing Macros with trybuild.md#2    # E0432: error[E0432]: unresolved import `my_crate`
+patterns/Tracing and Structured Logging Playbook.md#0    # E0433: error[E0433]: cannot find module or crate `tracing_subscriber` in this scope
+patterns/Workspace Project Structure.md#1    # E0433: error[E0433]: cannot find module or crate `domain` in this scope
+patterns/let else.md#1    # ?: error: a `||` expression cannot be directly assigned in `let...else`

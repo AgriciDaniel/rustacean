@@ -3,9 +3,9 @@ name: quality
 # Gates that back the README's headline quality claims.
 # - wikilinks: every [[link]] in the brain must resolve (the "100% resolved" badge).
 # - markdownlint: the repo's own authored docs stay well-formed.
-#
-# Roadmap (not yet a gate): a cargo-based doctest job that extracts every ```rust
-# fence and compiler-checks it. Tracked in the README roadmap; no rustc in CI yet.
+# - rust-examples: every `rust` example type-checks (edition 2024). A known set of
+#   intentional error-demos and project-structure snippets is allowlisted; any NEW
+#   example that fails to compile breaks the build.
 
 on:
   push:
@@ -40,3 +40,12 @@ jobs:
             SUPPORT.md
             CHANGELOG.md
             .github/**/*.md
+
+  rust-examples:
+    name: Rust examples compile (edition 2024)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.96.0
+      - name: Compile-check every rust example
+        run: bash scripts/run-rust-gate.sh

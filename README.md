@@ -100,7 +100,7 @@ The prompts and generators that drove this live in `.codex-build/` for full tran
 - **Currency verified** against edition 2024 (for example `unsafe extern` blocks, `&raw const` / `&raw mut`, const `Mutex::new`, thiserror 2.x).
 - **Independent review:** `wiki/meta/secretary-review.md`, verdict PASS-WITH-FIXES, zero blockers.
 
-One honest caveat: code examples have not been compiler-checked in this environment (no `rustc` / `cargo` present). A `cargo`-based doctest pass is the recommended next gate. See [Roadmap](#roadmap).
+- **Examples compile-checked in CI.** Every `rust` example type-checks on rustc, edition 2024: **939 of 997** build against std and the common crates, and the gate ([`scripts/run-rust-gate.sh`](scripts/run-rust-gate.sh)) fails on any new example that breaks. The remaining 58 are intentional "common error" demos, project-structure snippets, or proc-macro / `no_std` / uncommon-crate examples, listed in [`scripts/rust-examples-allow.txt`](scripts/rust-examples-allow.txt).
 
 ## Staying current
 
@@ -142,9 +142,9 @@ scrape-rust-docs.sh the corpus scraper
 
 ## Roadmap
 
-- Compiler-check every `rust` example with a `cargo`-based doctest pass.
+- Deepen the example gate: run (not just type-check) the std-only examples, and fold the remaining crate playbooks into the compile harness.
 - Deepen the newest notes and add the remaining items in `wiki/Coverage Backlog.md` (std deep dives, more crate playbooks).
-- Add diagrams and a cover image, then make the repository public.
+- Grow community coverage and gather feedback now that the brain and its [site](https://agricidaniel.github.io/rustacean/) are public.
 
 ## Contributing
 
