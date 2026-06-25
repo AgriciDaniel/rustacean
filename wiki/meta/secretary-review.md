@@ -1,6 +1,7 @@
 ---
 type: meta
 title: "Secretary Review"
+aliases: ["Secretary Review"]
 status: evergreen
 created: 2026-06-21
 updated: 2026-06-21

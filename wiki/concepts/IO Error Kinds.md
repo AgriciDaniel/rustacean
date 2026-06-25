@@ -1,6 +1,7 @@
 ---
 type: concept
-title: "I/O Error Kinds"
+title: "IO Error Kinds"
+aliases: ["I/O Error Kinds"]
 status: developing
 created: 2026-06-21
 updated: 2026-06-21
@@ -13,7 +14,7 @@ source_urls: ["https://doc.rust-lang.org/std/io/enum.ErrorKind.html", "https://d
 rust_version: "edition 2024 / 1.85+"
 ---
 
-# I/O Error Kinds
+# IO Error Kinds
 
 `io::ErrorKind` is the coarse, portable category attached to an `io::Error`; match it only when that category changes what your program should do.
 

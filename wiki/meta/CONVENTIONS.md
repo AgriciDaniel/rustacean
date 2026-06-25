@@ -7,7 +7,7 @@ updated: 2026-06-21
 tags:
   - meta
   - conventions
-aliases: ["CONVENTIONS"]
+aliases: ["CONVENTIONS", "Authoring Conventions — Rust Brain"]
 ---
 
 # Authoring Conventions — Rust Brain

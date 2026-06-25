@@ -1,6 +1,7 @@
 ---
 type: pattern
-title: "Cancellation-Safe I/O"
+title: "Cancellation-Safe IO"
+aliases: ["Cancellation-Safe I/O"]
 status: mature
 created: 2026-06-21
 updated: 2026-06-21
@@ -13,7 +14,7 @@ source_urls: ["https://doc.rust-lang.org/book/ch17-03-more-futures.html", "https
 rust_version: "edition 2024 / 1.85+"
 ---
 
-# Cancellation-Safe I/O
+# Cancellation-Safe IO
 
 Cancellation-safe I/O keeps partial read or write progress outside futures that may be dropped, so timeouts and `select!` branches cannot silently lose protocol state.
 
