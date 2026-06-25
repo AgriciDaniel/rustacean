@@ -1,5 +1,6 @@
 {
   "userIgnoreFilters": [
+    "site/",
     "agents/",
     "commands/",
     "hooks/",

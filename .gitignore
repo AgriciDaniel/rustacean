@@ -15,3 +15,8 @@ rust/
 # OS / editor cruft
 .DS_Store
 Thumbs.db
+
+# Quartz site build artifacts (the published site is built by CI from site/)
+site/node_modules/
+site/public/
+site/.quartz-cache/
