@@ -2,7 +2,7 @@
 # Pooled Codex driver: run every domain prompt (except the piloted error-handling)
 # as a gpt-5.5 high-effort sub-agent, MAXJOBS at a time. Each writes its own log.
 set -u
-ROOT="$HOME/Desktop/Rustacean"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT" || exit 1
 MAXJOBS="${1:-5}"
 

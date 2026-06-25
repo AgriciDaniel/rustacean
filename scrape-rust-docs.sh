@@ -3,9 +3,9 @@
 # Uses onlyMainContent:false to PRESERVE the heading hierarchy (print.html), then cleans:
 #   - strips the mdBook nav preamble (everything before the first top-level "# ")
 #   - converts linked headings "## [Title](url)" -> "## Title"
-# Key loaded from ~/.env (never printed). Re-runnable.
+# Key loaded from ~/.env or $KEYS_ENV (never printed). Re-runnable.
 set -u
-set -a; . "$HOME/.env"; set +a
+set -a; . "${KEYS_ENV:-$HOME/.env}"; set +a
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 DIR="$ROOT/sources"

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Scrape key std API pages (structure-preserving) into .raw/std/ for the std deep-dive.
 set -u
-set -a; . "$HOME/.env"; set +a
-ROOT="$HOME/Desktop/Rustacean"; OUT="$ROOT/.raw/std"; mkdir -p "$OUT"
+set -a; . "${KEYS_ENV:-$HOME/.env}"; set +a
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; OUT="$ROOT/.raw/std"; mkdir -p "$OUT"
 clean(){ awk 'p{print} /^# /{if(!p){p=1;print}}' | sed -E 's/^(#{1,6}) \[([^]]*)\]\([^)]*\)[[:space:]]*$/\1 \2/'; }
 
 PAGES=(

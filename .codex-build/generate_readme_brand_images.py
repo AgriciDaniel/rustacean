@@ -15,9 +15,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 
-ROOT = Path("$HOME/Desktop/Rustacean")
-ENV_PATH = Path("$HOME/.env")
-REFERENCE_IMAGE = Path("$HOME/style-reference.webp")
+ROOT = Path(__file__).resolve().parent.parent
+ENV_PATH = Path(os.environ.get("KEYS_ENV", str(Path.home() / ".env")))
+REFERENCE_IMAGE = Path(os.environ.get("REFERENCE_IMAGE", str(ROOT / "assets" / "style-reference.webp")))
 ASSETS = ROOT / "assets"
 TIMEOUT_SECONDS = 120
 MODEL_URL = (

@@ -2,7 +2,7 @@
 # Run a specific set of prompt files (by basename, no .txt) as Codex gpt-5.5 high agents, pooled.
 # Usage: run_set.sh MAXJOBS slug1 slug2 ...
 set -u
-ROOT="$HOME/Desktop/Rustacean"; cd "$ROOT" || exit 1
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$ROOT" || exit 1
 MAXJOBS="$1"; shift
 run_one(){ local s="$1"
   codex exec --skip-git-repo-check --ephemeral -C "$ROOT" \

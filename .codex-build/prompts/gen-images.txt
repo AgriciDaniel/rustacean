@@ -1,18 +1,18 @@
 You are generating Rust-style brand images for the Rustacean README. Working dir = vault root
-($HOME/Desktop/Rustacean). Write and RUN a Python 3 script to do this; do not ask, just do it.
+(the repo root). Write and RUN a Python 3 script to do this; do not ask, just do it.
 
 IMAGE ENGINE (verified working): Google Gemini "nano-banana".
-- Load the key: read GEMINI_API_KEY from $HOME/.env (a line `GEMINI_API_KEY=...`).
+- Load the key: read GEMINI_API_KEY from ~/.env (or the file named by $KEYS_ENV) (a line `GEMINI_API_KEY=...`).
 - Endpoint (POST, JSON):
   https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent?key=GEMINI_API_KEY
 - Request body shape:
   {"contents":[{"parts":[ {"text":"<prompt>"}, {"inlineData":{"mimeType":"image/webp","data":"<base64 of the reference image>"}} ]}]}
 - Response: candidates[0].content.parts[] ; the image part is parts[i]["inlineData"]["data"] (base64 PNG). Decode and save.
-- Use the STYLE REFERENCE image at $HOME/style-reference.webp (a friendly flat-vector orange
+- Use the STYLE REFERENCE image at the path named by $REFERENCE_IMAGE (a friendly flat-vector orange
   Ferris crab holding the Rust cog logo). Base64-encode it and include it as the inlineData part in EVERY request so
   the output matches that exact mascot style (flat vector, bright Rust orange #F74C00 / #CE422B, clean, friendly).
 
-OUTPUT: save into $HOME/Desktop/Rustacean/assets/ . Save each as PNG first, then convert to .webp
+OUTPUT: save into the repo's assets/ directory . Save each as PNG first, then convert to .webp
 (try Pillow: `from PIL import Image; Image.open(png).save(webp,"WEBP",quality=90)`; if Pillow is missing, try the
 `cwebp` CLI; if neither exists, keep the .png and report that). Keep both is fine. Name files exactly as listed.
 

@@ -20,7 +20,7 @@ file begins at its real H1. Total: **~833,000 words** across 10 books.
 | `sources/rustdoc-book.md` | https://doc.rust-lang.org/rustdoc/ | 21,469 |
 | `sources/command-line-book.md` | https://rust-cli.github.io/book/ | 11,118 |
 
-Re-run with `./scrape-rust-docs.sh` (uses `FIRECRAWL_API_KEY` from `~/.env`).
+Re-run with `./scrape-rust-docs.sh` (uses `FIRECRAWL_API_KEY` from `~/.env` or `$KEYS_ENV`).
 
 ## B. Source tree — `rust/` (shallow clone)
 - Repo: https://github.com/rust-lang/rust
