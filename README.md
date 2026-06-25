@@ -44,6 +44,10 @@
 
 The brain lives in `wiki/`. Start at `wiki/Rust Brain Home.md`.
 
+![The Rustacean knowledge graph in Obsidian: hundreds of cross-linked notes clustered by domain](assets/graph-example.webp)
+
+*The brain as a graph: every note links to its concepts, patterns, anti-patterns, and domain map.*
+
 | Layer | Count | What it is |
 | --- | --- | --- |
 | Concepts | 313 | Language and standard-library ideas (ownership, lifetimes, traits, async, unsafe, and more) |
