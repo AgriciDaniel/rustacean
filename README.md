@@ -14,7 +14,7 @@
 
 > Not a tutorial and not a doc mirror. It is the opinionated layer on top of the docs: for every topic you get the idiomatic way to do it, the mistake to avoid, a compilable example, and links to everything related.
 
-### Why it exists
+## Why it exists
 
 - **Code with trust.** Every atomic note opens with a one-line answer, then a minimal compilable `rust` example, a "best practice" list, a "pitfalls" list, and dense `[[links]]`. You act on the note without leaving it.
 - **Current, not stale.** Targeted at edition 2024 and stable 1.85+. Currency was checked against the books and the standard-library pages, and a separate review pass caught real version drift (for example, `Result::flatten` requires Rust 1.89+).
@@ -37,6 +37,7 @@
 - [Regenerating the corpus](#regenerating-the-corpus)
 - [Repository layout](#repository-layout)
 - [Roadmap](#roadmap)
+- [Contributing](#contributing)
 - [Attribution](#attribution)
 - [License](#license)
 - [Author](#author)
@@ -46,7 +47,7 @@
 The brain lives in `wiki/`. Start at `wiki/Rust Brain Home.md`.
 
 | Layer | Count | What it is |
-|---|---|---|
+| --- | --- | --- |
 | Concepts | 313 | Language and standard-library ideas (ownership, lifetimes, traits, async, unsafe, and more) |
 | Patterns | 123 | Idioms and best practices (newtype, builder, error handling, RAII guards, crate playbooks) |
 | Anti-patterns | 68 | Footguns and the correct alternative (needless clone, blocking in async, stringly-typed code) |
@@ -138,6 +139,14 @@ scrape-rust-docs.sh the corpus scraper
 - Compiler-check every `rust` example with a `cargo`-based doctest pass.
 - Deepen the newest notes and add the remaining items in `wiki/Coverage Backlog.md` (std deep dives, more crate playbooks).
 - Add diagrams and a cover image, then make the repository public.
+
+## Contributing
+
+Contributions are welcome: fix an incorrect or stale note, add a missing one from `wiki/Coverage Backlog.md`, or open an issue.
+
+- **Read [CONTRIBUTING.md](CONTRIBUTING.md) first.** Every note follows the authoring contract in [`wiki/meta/CONVENTIONS.md`](wiki/meta/CONVENTIONS.md): valid frontmatter, an answer-first opening, a minimal compilable `rust` example, ✅ best-practice and ⚠️ pitfalls lists, at least six `[[wikilinks]]`, and cited sources, all current to edition 2024 / stable 1.85+.
+- **Keep links resolving.** CI runs `python3 scripts/check-wikilinks.py wiki`; it must report 0 unresolved before a change merges.
+- **Be kind, report safely.** This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md). To report a problem privately, see [SECURITY.md](SECURITY.md); to ask a question, see [SUPPORT.md](SUPPORT.md).
 
 ## Attribution
 

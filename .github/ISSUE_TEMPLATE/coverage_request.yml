@@ -1,0 +1,33 @@
+name: Coverage request
+description: A Rust topic is missing from the brain.
+title: "[coverage]: "
+labels: ["coverage"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: The concept, pattern, or antipattern that should have a note.
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Domain / MOC
+      description: 'Which domain map it belongs under, for example "Async Rust" or "std: I/O & Formatting".'
+    validations:
+      required: false
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What question would this note answer? What mistake would it prevent?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Canonical URLs to base the note on.
+    validations:
+      required: false

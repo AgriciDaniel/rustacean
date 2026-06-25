@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask in the community
+    url: https://www.skool.com/ai-marketing-hub-pro
+    about: Questions and broader Rust / AI-tooling discussion around this toolset.
+  - name: Browse the brain
+    url: https://github.com/AgriciDaniel/rustacean#readme
+    about: Start at the README and the wiki home before filing an issue.

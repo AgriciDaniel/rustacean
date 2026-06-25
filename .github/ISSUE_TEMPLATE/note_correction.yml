@@ -1,0 +1,42 @@
+name: Note correction
+description: A note is wrong, unsound, or out of date.
+title: "[correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: note
+    attributes:
+      label: Which note?
+      description: The note title or path, for example wiki/concepts/Ownership.md.
+      placeholder: wiki/concepts/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect?
+      description: Quote the line or claim and explain what is wrong or stale.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is correct?
+      description: The accurate version, ideally with a minimal example.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A canonical URL backing the correction (doc.rust-lang.org, an RFC, a release note).
+      placeholder: https://doc.rust-lang.org/...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Rust version affected
+      placeholder: edition 2024 / 1.85+
+    validations:
+      required: false
