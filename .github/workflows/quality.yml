@@ -1,0 +1,42 @@
+name: quality
+
+# Gates that back the README's headline quality claims.
+# - wikilinks: every [[link]] in the brain must resolve (the "100% resolved" badge).
+# - markdownlint: the repo's own authored docs stay well-formed.
+#
+# Roadmap (not yet a gate): a cargo-based doctest job that extracts every ```rust
+# fence and compiler-checks it. Tracked in the README roadmap; no rustc in CI yet.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  wikilinks:
+    name: Wikilink resolution
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every [[wikilink]] must resolve
+        run: python3 scripts/check-wikilinks.py wiki
+
+  markdownlint:
+    name: Markdown lint (authored docs)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          config: .markdownlint.json
+          globs: |
+            README.md
+            CONTRIBUTING.md
+            CODE_OF_CONDUCT.md
+            SECURITY.md
+            SUPPORT.md
+            CHANGELOG.md
+            .github/**/*.md
