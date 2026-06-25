@@ -15,7 +15,15 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "agricidaniel.github.io/rustacean",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "meta",
+      "Coverage Backlog.md",
+      "hot.md",
+      "log.md",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
