@@ -23,6 +23,7 @@ const config: QuartzConfig = {
       "Coverage Backlog.md",
       "hot.md",
       "log.md",
+      "**/Practice*",
     ],
     defaultDateType: "modified",
     theme: {

@@ -127,7 +127,7 @@ The Rust Reference is the authority for syntax and stable language rules in this
 The Rustonomicon is most useful for unsafe-code consequences of variance, ZSTs, and `PhantomData`.
 Use current standard library docs for concrete marker types such as `PhantomData`, `PhantomPinned`, `Send`, and `Sync`.
 For third-party crates that abstract these patterns, cite docs.rs and verify the latest version before recommending an API.
-This MOC targets Rust edition 2024 / stable 1.85+ per [[CONVENTIONS]].
+This MOC targets Rust edition 2024 / stable 1.85+.
 
 ## Sources
 - The Rust Reference — [[the-reference]],

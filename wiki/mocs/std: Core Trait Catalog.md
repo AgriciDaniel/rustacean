@@ -67,7 +67,7 @@ Use [[Custom Error Types]] and [[Error Sources and Chains]] for broader error de
 ## Equality, ordering, and hashing
 [[Equality Traits PartialEq and Eq]] covers `==`, `!=`, and reflexive equality.
 It explains why floats implement `PartialEq` but not `Eq`.
-It links to the existing seed note [[PartialEq]].
+It links to [[PartialEq]].
 
 [[Ordering Traits PartialOrd and Ord]] covers partial and total ordering.
 It explains derived lexicographic order, enum discriminants, and manual `Ord`.

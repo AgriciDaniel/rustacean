@@ -9,7 +9,7 @@ tags: [rust, index, meta]
 
 # Master Index
 
-Every note by domain. Hub: [[Rust Brain Home]]. Totals: 312 concepts · 122 patterns · 68 anti-patterns · 34 MOCs.
+Every note by domain. Hub: [[Rust Brain Home]].
 
 ## Tooling & Getting Started  ·  [[Tooling & Getting Started]]
 **Concepts:** [[Anatomy of a Cargo Project]] · [[Cargo Basics]] · [[Cargo Build Run Check Test]] · [[The Guessing Game Tutorial]] · [[crates.io and Dependencies Intro]] · [[rustfmt and Clippy]] · [[rustup and Installation]]
@@ -167,6 +167,3 @@ Every note by domain. Hub: [[Rust Brain Home]]. Totals: 312 concepts · 122 patt
 **Concepts:** [[Global Allocators]] · [[Panic Handlers]] · [[Panic Strategy Selection]] · [[Rust WebAssembly Targets]] · [[Target Features and CPU Baselines]] · [[Using alloc without std]] · [[alloc Collections in no_std]] · [[no_std Crate Design]] · [[wasm-bindgen Basics]]
 **Patterns:** [[Cargo Cross-Compilation Setup]] · [[Target-Specific cfg Boundaries]]
 **Anti-patterns:** [[Assuming wasm32 Means Browser]]
-
-## Practice (Rustlings)  ·  [[Practice (Rustlings)]]
-**Concepts:** [[Practice: Clippy]] · [[Practice: Conversions]] · [[Practice: Enums]] · [[Practice: Error Handling]] · [[Practice: Functions]] · [[Practice: Generics]] · [[Practice: HashMaps]] · [[Practice: If]] · [[Practice: Intro]] · [[Practice: Iterators]] · [[Practice: Lifetimes]] · [[Practice: Macros]] · [[Practice: Modules]] · [[Practice: Move Semantics]] · [[Practice: Options]] · [[Practice: Primitive Types]] · [[Practice: Quizzes]] · [[Practice: Smart Pointers]] · [[Practice: Strings]] · [[Practice: Structs]] · [[Practice: Tests]] · [[Practice: Threads]] · [[Practice: Traits]] · [[Practice: Variables]] · [[Practice: Vecs]]

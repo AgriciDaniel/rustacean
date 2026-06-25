@@ -10,9 +10,8 @@ tags: [rust, moc, home]
 # 🦀 Rust Brain — Home
 
 Your entry point for writing **correct, idiomatic, current Rust** (edition 2024 / stable 1.85+).
-**312 concepts · 122 patterns · 68 anti-patterns · 34 domain maps** — from the official
-books, the std API, and verified research. Lookups: [[index]]. Conventions:
-[[Authoring Conventions — Rust Brain]]. Your agent: `AGENTS.md` / `./rust-secretary.sh`.
+**Hundreds of cross-linked notes — concepts, patterns, and anti-patterns — across 34 domain maps** — from the official
+books, the std API, and verified research. Lookups: [[index]].
 
 ## Language & core
 - [[Tooling & Getting Started]] — 7 concepts, 3 patterns, 1 anti-patterns
@@ -53,7 +52,4 @@ books, the std API, and verified research. Lookups: [[index]]. Conventions:
 - [[Ecosystem & Crate Playbooks]] — 1 concepts, 12 patterns, 0 anti-patterns
 - [[WebAssembly, no_std & Targets]] — 9 concepts, 2 patterns, 1 anti-patterns
 
-## Practice
-- [[Practice (Rustlings)]] — 25 concepts, 0 patterns, 0 anti-patterns
-
-See [[overview]] · [[hot]] · [[log]] · [[Coverage Backlog]] · [[Secretary Review]]
+See [[overview]] · [[index]]

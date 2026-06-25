@@ -31,8 +31,7 @@ Floating-point values implement `PartialEq` but not `Eq`.
 `NaN != NaN`, so reflexivity fails.
 That one fact explains much of the distinction.
 
-The existing note [[PartialEq]] is a seed note.
-This std catalog note gives the deeper implementor contract.
+The note [[PartialEq]] gives a quick overview; this std catalog note gives the deeper implementor contract.
 
 ## How it works
 Most structs and enums should derive equality.

@@ -14,14 +14,14 @@ A comprehensive, cross-linked Obsidian brain for writing **correct, idiomatic, c
 deep-research layer.
 
 ## What's inside
-- **584 interconnected notes** (312 concepts, 122 patterns, 68 anti-patterns, 34 domain MOCs, source notes), 100% wikilink resolution.
+- **Hundreds of interconnected notes** — concepts, patterns, anti-patterns, and 34 domain maps — densely cross-linked.
 - Every atomic note: answer-first definition, a compilable `rust` example, ✅ best-practices, ⚠️ pitfalls, dense `[[links]]`, cited sources; average depth ~121 lines.
-- 34 domains from Getting Started → Ownership → Traits → Async → Unsafe/FFI → std library → Cargo → Performance → WASM/no_std → Embedded, plus crate playbooks and Rustlings practice.
+- 34 domains from Getting Started → Ownership → Traits → Async → Unsafe/FFI → std library → Cargo → Performance → WASM/no_std → Embedded, plus crate playbooks.
 
 ## How it was built
-Official docs scraped (Firecrawl) → verified research (multi-agent) → atomic synthesis by
-Codex `gpt-5.5` sub-agents against a fixed authoring contract ([[Authoring Conventions — Rust Brain]])
-and a gold-standard exemplar ([[Ownership]]), then orchestrator-reviewed for compliance and currency.
+Built from the official Rust documentation captured as markdown and a verified deep-research
+layer, then synthesized into atomic notes against a fixed authoring contract and a gold-standard
+exemplar ([[Ownership]]), and independently reviewed for compliance and currency.
 
 ## Navigate
-[[Rust Brain Home]] (start here) · [[index]] (full catalog) · [[hot]] (recent context) · [[Coverage Backlog]] (what's next)
+[[Rust Brain Home]] (start here) · [[index]] (full catalog)

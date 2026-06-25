@@ -46,8 +46,6 @@ fn main() {
 ## Pitfalls
 - ⚠️ Forgetting to drop leaks resources; double-dropping is [[Undefined Behavior]].
 
-> [!todo] Seed note — expand (see [[Coverage Backlog]]).
-
 ## See also
 [[The Drop Trait]] · [[MaybeUninit]] · [[Pin projection]] · [[Undefined Behavior]] · [[unsafe fn]] · [[Raw Pointers]] · [[Unsafe Rust & FFI]]
 
